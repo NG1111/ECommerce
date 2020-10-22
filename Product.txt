@@ -1,0 +1,58 @@
+package com.products.oops;
+
+public class Product {
+
+	private int ProdID;
+	private String ProdName;
+	private String ProdDescre;
+	private double ProdAmt;
+	private int ProdQty;
+	
+	Product(int ProdID,String ProdName,String ProdDescre,double ProdAmt,int ProdQty){
+		this.ProdID=ProdID;
+		this.ProdName=ProdName;
+		this.ProdDescre=ProdDescre;
+		this.ProdAmt=ProdAmt;
+		this.ProdQty=ProdQty;
+	
+	}
+	
+	public int getProdQty() {
+		return ProdQty;
+	}
+	public void setProdQty(int prodQty) {
+		ProdQty = prodQty;
+	}
+	public int getProdID() {
+		return ProdID;
+	}
+	public void setProdID(int prodID) {
+		ProdID = prodID;
+	}
+	public String getProdName() {
+		return ProdName;
+	}
+	public void setProdName(String prodName) {
+		ProdName = prodName;
+	}
+	public String getProdDescre() {
+		return ProdDescre;
+	}
+	public void setProdDescre(String prodDescre) {
+		ProdDescre = prodDescre;
+	}
+	public double isProdAmt() {
+		return ProdAmt;
+	}
+	public void setProdAmt(double prodAmt) {
+		ProdAmt = prodAmt;
+	}
+	
+	public String showDetails()
+	{
+		return (ProdID+","+ProdName+"," +ProdAmt+"," +ProdQty);
+	}
+	
+	
+	
+}

@@ -1,0 +1,39 @@
+package com.products.oops;
+
+public class ShoppingCart {
+
+	private int NoOfItems;
+	private String Product;
+    ShoppingCart(String Product,int NoOfItems) {
+		this.Product=Product;
+		this.NoOfItems=NoOfItems;
+	}
+	public int getNoOfItems() {
+		return NoOfItems;
+	}
+	public void setNoOfItems(int noOfItems) {
+		NoOfItems = noOfItems;
+	}
+	public String getProduct() {
+		return Product;
+	}
+	public void setProduct(String product) {
+		Product = product;
+	}
+	public String AddToCart()
+	{
+		return (Product+"," +NoOfItems);
+		
+	}
+	public String RemFromCart()
+	{
+		return (Product+"," +NoOfItems);
+		
+	}
+	public String GetCartItems()
+	{
+		return (Product+"," +NoOfItems);
+		
+	}
+	}
+

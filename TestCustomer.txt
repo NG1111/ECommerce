@@ -1,0 +1,21 @@
+package com.products.oops;
+
+import java.util.Scanner;
+
+public class TestCustomer {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the new customer details:");
+		String CustName=sc.next();
+		String CustId =sc.next();
+		int MobNo=sc.nextInt();
+		
+		Customer s2=new Customer(CustName,CustId,MobNo);
+		System.out.println(s2.showDetails());
+	
+		sc.close();
+	}
+
+}

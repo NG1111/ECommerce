@@ -1,0 +1,39 @@
+package com.products.oops;
+
+public class Customer {
+
+	private String CustName;
+	private String  CustId;
+	private int MobNo;
+	Customer(String CustName, String custId ,int MobNo){
+		this.CustName=CustName;
+		this.CustId=custId;
+		this.MobNo=MobNo;
+	}
+
+
+	public int getMobNo() {
+		return MobNo;
+	}
+
+	public void setMobNo(int mobNo) {
+		MobNo = mobNo;
+	}
+
+	public String getCustName() {
+		return CustName;
+	}
+	public void setCustName(String custName) {
+		CustName = custName;
+	}
+	public String getCustId() {
+		return CustId;
+	}
+	public void setCustId(String custId) {
+		CustId = custId;
+	}
+
+	public String showDetails() {
+		return (CustName+"," +CustId+"," +MobNo+",");
+	}
+}

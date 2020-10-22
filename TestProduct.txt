@@ -1,0 +1,20 @@
+package com.products.oops;
+
+import java.util.Scanner;
+
+public class TestProduct {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Product details :");
+		int 	ProdID = sc.nextInt(); 	
+		String	ProdName = sc.next();
+		String	ProdDescre = sc.next();
+		double	ProdAmt = sc.nextDouble();
+		int 	ProdQty = sc.nextInt();
+		
+		Product p2=new Product(ProdID,ProdName,ProdDescre,ProdAmt,ProdQty);
+			System.out.println(p2.showDetails());
+			sc.close();
+	}
+}
